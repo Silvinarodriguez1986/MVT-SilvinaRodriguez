@@ -5,29 +5,79 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Pagina</title>
+    <style></style>
 </head>
 <body>
     <h1>Bienvenidos a los miembros de mi familia</h1>
     <h2>En este sitio podras ver la base de datos familiar</h2>
     <h3>Te invitamos a ver nuesta base de datos</h3>
 
+   <br><br>
+
+    <ol>
+        <li>Nombre: Patricia</li>
+        <li>Apellido: De la camara</li>
+        <li>Relacion: Mama</li>
+        <li>Nacimiento: 1957</li>
+        <li>Edad: 65</li>
+       </ol>
+       
+    <hr>
+
+   <ol>
+    <li>Nombre: Analia</li>
+    <li>Apellido: Rodriguez</li>
+    <li>Relacion: Hermana</li>
+    <li>Nacimiento: 1981</li>
+    <li>Edad: 40</li>
+   </ol>
+  
+   <hr>
+
+   <ol>
+    <li>Nombre: Indira</li>
+    <li>Apellido: Rodriguez</li>
+    <li>Relacion: Sobrina</li>
+    <li>Nacimiento: 2002</li>
+    <li>Edad: 19</li>
+   </ol>
+
+   <hr>
+
+   <ol>
+    <li>Nombre: Miguel</li>
+    <li>Apellido: Rodriguez</li>
+    <li>Relacion: Papa</li>
+    <li>Nacimiento: 1957</li>
+    <li>Edad: 65</li>
+   </ol>
    
-    <hr>
+   <hr>
 
-   <tr>
-    <td>Nombre</td>
-    <td>Apelido</td>
-    <td>Relacion</td>
-    <td>Nacimiento</td>
-    <td>Edad</td>
+   <ol>
+    <li>Nombre: Walter</li>
+    <li>Apellido: Rodriguez</li>
+    <li>Relacion: Hermano</li>
+    <li>Nacimiento: 1978</li>
+    <li>Edad: 44</li>
+   </ol>
+   
+   <hr>
 
-    </tr>
-
-    <hr>
+   <ol>
+    <li>Nombre: Iciar</li>
+    <li>Apellido: Segura</li>
+    <li>Relacion: Sobrina</li>
+    <li>Nacimiento: 2008</li>
+    <li>Edad: 13</li>
+   </ol>
+   
+   <hr>
+    
 
     <tr>
         {% for miembro in familia %}
-        <td>{{miembro.name}}</td>
+        <td>{{miembro.nombre}}</td>
         <td>{{miembro.apellido}</td>
         <td>{{miembro.relacion}}</td>
         <td>{{miembro.nacimiento}}</td>
@@ -35,19 +85,11 @@
     </tr>
     {% endfor %} 
 
-    <hr>
-
-
-    <hr>
-
     <p style="color: red">Su nombre es: {{ nombre }}</p>
     <p style="color: red">Su apellido es: {{ apellido }}</p> 
     <p style="color: red">Su relacion es: {{ relacion }}</p> 
-    <p style="color: red">Su edad es: {{ edad }}</p>
-
-    <hr>
-
-   
+    <p style="color: red">Su nacimiento es: {{ nacimiento }}</p> 
+    <p style="color: red">Su edad es: {{ edad }}</p> 
 
 </body>
 </html>

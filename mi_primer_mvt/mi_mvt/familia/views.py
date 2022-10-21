@@ -79,7 +79,7 @@ def familia(request):
     return render(
           request=request,
         context=context_dict,
-        template_name="familia/template.html",
+        template_name="template.html",
     )
 
 def calculate_age(nacimiento: str) -> int:
