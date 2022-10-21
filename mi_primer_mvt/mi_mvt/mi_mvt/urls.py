@@ -17,19 +17,20 @@ from django.contrib import admin
 from django.urls import path
 from django.urls import include
 from familia import views
-from familia.views import template_loader
+#from familia.views import template_loader
 
 
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('hello-world/', views.hello_world), #practicas, no tener en cuenta
-    path('title/', views.title), #practicas, no tener en cuenta
-    path('her-name-is/<str:nombre>/<int:edad>/', views.her_name_is), #practicas, no tener en cuenta
+    path('hello-world/', views.hello_world), 
+    path('title/', views.title),
+    path('her-name-is/<str:nombre>/<int:edad>/', views.her_name_is),
     path('my-template/<str:nombre>/<str:apellido>/<str:relacion>/<str:nacimiento>/<int:edad>/', views.my_template),
     path('count/', views.count),
-    path('template-loader/<str:nombre>/<str:apellido>/<str:relacion>/<str:nacimiento>/<int:edad>/', template_loader), #practicas, no tener en cuenta 
+    #path('template-loader/<str:nombre>/<str:apellido>/<str:relacion>/<str:nacimiento>/<int:edad>/', template_loader), 
+ 
     path("familia/", include("familia.urls")) 
 
    

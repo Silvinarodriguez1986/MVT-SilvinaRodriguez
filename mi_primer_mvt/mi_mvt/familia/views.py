@@ -10,13 +10,13 @@ from django.template import loader
 from datetime import datetime
 
 
-def hello_world(request):  #practicas, no tener en cuenta
+def hello_world(request): 
     return HttpResponse("Hola esta es mi familia")
 
-def title(request):  #practicas, no tener en cuenta
+def title(request): 
     return HttpResponse("<h1>Estos son los miembros de mi familia</h1>")    
 
-def her_name_is(request, nombre, edad):  #practicas, no tener en cuenta
+def her_name_is(request, nombre, edad): 
     documentoDeTexto = f"Su nombre es: <br><br> {nombre} <br><br> Su edad es: {edad}"
     return HttpResponse(documentoDeTexto)
 
@@ -30,7 +30,7 @@ def my_template(request):
         )
 
     my_html.close()
-                                    #practicas, no tener en cuenta
+                                  
     context_dict = {
       
         "my_string": "Patricia Analia Miguel Walter Indira Iciar".split(),
@@ -55,7 +55,7 @@ def count(request):
     documentoDeTexto = f"Tenemos cargados {Familia.objects.all().count()} familiares"
     return HttpResponse(documentoDeTexto)    
 
-def template_loader(request, nombre: str, apellido: str, relacion: str, nacimiento: str, edad: int):    #practicas, no tener en cuenta
+#def template_loader(request, nombre: str, apellido: str, relacion: str, nacimiento: str, edad: int):  
 
     template = loader.get_template("template_loader.html")  
     
