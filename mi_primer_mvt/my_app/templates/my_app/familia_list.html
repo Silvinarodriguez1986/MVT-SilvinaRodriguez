@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Familias</title>
+</head>
+<body>
+    
+     
+    <h1>Bienvenidos a nuestra base de datos</h1>
+
+    <h2>Estos son los miembros de mi familia</h2>
+
+    <h3>Somos una familia conformada por 5 personas, somos de Rio Colorado, provincia de Rio Negro. Es un pueblo de 20.000 habitantes, con solo cruzar un puente estas en la provincia de La Adela, La pampa.</h3>
+    <br>
+    <ul>
+        {% for familia in familias %}
+        <li>{{ familia }}</li>
+        {% endfor %}
+    </ul>
+
+</body>
+</html>
